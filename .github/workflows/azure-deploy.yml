@@ -33,7 +33,7 @@ jobs:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          AZURE_SUBSCRIPTION: ${{ secrets.AZURE_SUBSCRIPTION}}
+          # AZURE_SUBSCRIPTION: ${{ secrets.AZURE_SUBSCRIPTION}}
         
       - name: Show Azure 
         run: az account show
