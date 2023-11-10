@@ -28,7 +28,7 @@ jobs:
 
       - name: Login via Azure CLI
         run: |
-          az login --service-principal -u $env:AZURE_CLIENT_ID -P $ENV:AZURE_CLIENT_SECRET --tenant $env:AZURE_TENANT_ID
+          az login --service-principal -u $env:AZURE_CLIENT_ID -p $ENV:AZURE_CLIENT_SECRET --tenant $env:AZURE_TENANT_ID
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
