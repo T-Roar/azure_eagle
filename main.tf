@@ -97,5 +97,3 @@ resource "azurerm_storage_account" "log_storage" {
   account_replication_type = "LRS"
   enable_https_traffic_only = false
 }
-
-
